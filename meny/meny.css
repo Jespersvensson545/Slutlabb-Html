@@ -1,0 +1,14 @@
+.pizzameny{
+    width: 100%;
+    max-width: 1100%;
+    height: auto;
+    display:block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+@media (max-width: 760px){
+    .pizzameny{
+        max-width: 100%;
+        padding: 0 10px ;
+    }
+}
