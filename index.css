@@ -1,0 +1,65 @@
+/*stil för sidan*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: bisque;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+/* Navbar-stil */
+.navbar {
+    background-color:black;
+    padding: 12px 0;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.1s;
+}
+
+.navbar a:hover {
+    color:red;
+}
+/*image*/
+
+#ugnbild{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#ugnbild img{
+   display: block;
+   width:100%;
+   height:auto;
+}
+.bildtext {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    text-align: center;
+    color: bisque;
+    font-size: 36px;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0;
+}
