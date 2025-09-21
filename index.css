@@ -29,7 +29,7 @@ h1{
 
 .navbar a {
     text-decoration: none;
-    color: white;
+    color: bisque;
     font-weight: bold;
     font-size: 18px;
     transition: color 0.1s;
@@ -45,6 +45,7 @@ h1{
     margin: 0;
     padding: 0;
     overflow: hidden;
+    position: relative;
 }
 #ugnbild img{
    display: block;
@@ -53,14 +54,13 @@ h1{
 }
 .bildtext {
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -200%);
     text-align: center;
-    color: bisque;
-    font-size: 36px;
+    color: red;
+    font-size: 60px;
     padding: 20px;
-    border-radius: 5px;
     margin: 0;
 }
 footer {
@@ -71,7 +71,7 @@ footer {
 }
 
 footer h2 {
-  color: bisque;
+  color:bisque;
   font-size: 20px;
 }
 
@@ -96,4 +96,26 @@ footer div {
   width: 250px;
 }
 
+@media screen and (max-width:768px){
+    .bildtext{
+        font-size: 18px;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 40%;
+    }
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        align-items: center;
 
+    }
+    footer div{
+        text-align: center;
+        width: 320px;
+        max-width: 300px;
+    }
+    div h2{
+        color: red;
+    }
